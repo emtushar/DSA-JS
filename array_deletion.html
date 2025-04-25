@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletion in Array</title>
+    <script>
+      function callMyFunc(){
+        let data = [34,21,56,84,47];
+        let position = parseInt(document.getElementById("element").value);
+        for(let i=position;i<data.length-1;i++){
+      data[i]=data[i+1];
+        }
+        data.length-=1;
+      console.warn(data);
+
+      }
+
+    </script>
+
+</head>
+<body>
+    <input type="text" id="element" placeholder="Enter Position">
+    <button onclick="callMyFunc()">Click here</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+    <script>
+        let a = [2,5,78,4,24,32];
+        // for(let i=0;i<a.length;i++){
+        //     document.write(`${a[i]} <br>`);
+        // }
+        let x=3;
+        // document.write(`${a[x]}`);
+        
+        function callFunction(){
+            let inp = document.getElementById("element").value;
+            if(inp<a.length && typeof  parseInt(inp)=="number"){
+                alert(`${a[inp]}`);
+
+            }
+            else{
+                alert(`Enter Valid Number!!!!!!!!!!!!!!!`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="callFunction()">click here</button>
+</body>
+</html>

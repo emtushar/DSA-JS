@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging two arrays</title>
+    <script>
+        let data1=[67,35,14,86,78,21]
+        let data2=[90,15,32,57,37]
+        let data3=[]
+        for(let i=0;i<data1.length;i++){
+            data3[i]=data1[i];
+            // console.warn(data3);
+        }
+        for(let i=0;i<data2.length;i++){
+            data3[data1.length + i]=data2[i];
+        }
+        console.warn(data3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
